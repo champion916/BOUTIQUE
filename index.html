@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Boutique Bébé — Lingerie pour bébé</title>
+  <meta name="description" content="Boutique de lingerie pour bébé - Collections douces et élégantes.">
+  <style>
+    :root{
+      --accent:#ffb6c1; /* rose pastel */
+      --bg:#fff0f5;
+      --card:#ffffff;
+      --text:#111;
+      --muted:#6b7280;
+      --container:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .container{max-width:var(--container);margin:0 auto;padding:24px}
+    header{background:#fff0f5;box-shadow:0 2px 6px rgba(0,0,0,.06);position:sticky;top:0;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand .logo{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#ffc0cb);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .cta{background:var(--accent);padding:10px 14px;border-radius:12px;color:#fff;font-weight:700;text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0}
+    .hero h1{font-size:38px;margin:0 0 12px;color:#ff69b4}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .hero .hero-image{border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,.07)}
+    .btn-row{display:flex;gap:12px}
+    .btn{padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{border:2px solid rgba(0,0,0,.06);background:transparent;color:var(--text)}
+
+    .section{padding:36px 0}
+    .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 18px rgba(12,16,30,.04)}
+    .product-image{height:220px;border-radius:10px;overflow:hidden}
+    .product-image img{width:100%;height:100%;object-fit:cover}
+    .product-title{font-weight:700;margin:10px 0 6px}
+    .price{color:#ff69b4;font-weight:800}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+    .contact-card{background:var(--card);padding:18px;border-radius:10px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e7eb}
+    .footer{padding:28px 0;color:var(--muted);font-size:14px}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .products-grid{grid-template-columns:repeat(2,1fr)}
+      .grid-2{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      nav a{display:none}
+      .products-grid{grid-template-columns:1fr}
+      .brand .logo{width:36px;height:36px}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">BB</div>
+        <div>
+          <div style="font-weight:800">La Boutique Bébé</div>
+          <div style="font-size:13px;color:var(--muted)">lingerie pour bébé douce et confortable</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#collections">Collections</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#contact">Nous contacter</a>
+    </nav>
+ </div>
+ </header>
+
+ <main>
+ <section id="accueil" class="container hero">
+ <div class="hero-content">
+ <h1>Des câlins doux pour votre petit trésor</h1>
+ <p>Découvrez notre collection de lingerie pour bébé, confectionnée avec les tissus les plus doux et les plus respirants. Le confort et l'élégance pour les premiers jours.</p>
+ <div class="btn-row">
+ <a href="#collections" class="btn btn-primary">Voir les collections</a>
+ <a href="#apropos" class="btn btn-outline">Notre histoire</a>
+ </div>
+ </div>
+ <div class="hero-image">
+ <img src="TATI -.jpg" alt="Image de bébé et lingerie douce" loading="lazy">
+</div>
+</section>
+
+ <section id="collections" class="container section">
+ <h2 style="text-align:center;font-size:28px;margin-bottom:30px;color:#ff69b4">Nos Collections Phares</h2>
+ <div class="products-grid">
+ <div class="card">
+ <div class="product-image">
+ <img src="télécharge.jpg" alt="Body en coton bio" loading="lazy">
+ </div>
+<div class="product-title">Body Coton Bio</div>
+ <p style="font-size:14px;color:var(--muted)">Le basique indispensable, 100% biologique.</p>
+ <div class="price">2500fcfa</div>
+ </div>
+
+ <div class="card">
+ <div class="product-image">
+ <img src="télécharge1.jpg" alt="Pyjama en velours" loading="lazy">
+ </div>
+ <div class="product-title">Pyjama Velours Étoiles</div>
+ <p style="font-size:14px;color:var(--muted)">Pour des nuits douces et chaudes.</p>
+<div class="price">2000fcfa</div>
+ </div>
+
+ <div class="card">
+ <div class="product-image">
+<img src="télécharger.jpg" alt="Ensemble bonnet et moufles" loading="lazy">
+</div>
+<div class="product-title">Set Naissance Tricot</div>
+ <p style="font-size:14px;color:var(--muted)">Un cadeau parfait pour la maternité.</p>
+<div class="price">1500fcfa</div>
+ </div>
+
+ </div>
+</section>
+ <section id="apropos" class="container section">
+ <h2 style="text-align:center;font-size:28px;margin-bottom:30px;color:#ff69b4">💕 Notre Engagement Qualité</h2>
+<div class="grid-2">
+ <div>
+ <p>Bienvenue chez <h1> La Boutique Bébé </h1>, où nous habillons la peau de votre nouveau-né avec la même douceur et la même pureté que celle avec laquelle vous le câlinez. Parce que sa peau mérite une protection sans compromis, chaque vêtement est conçu dans des matières certifiées . Ici, douceur rime avec sécurité, pour offrir à votre bébé un départ dans la vie aussi serein que délicat.
+<ul style="list-style:disc;padding-right:20px;color:var(--muted)">
+ <li>100% Coton Biologique certifié.</li>
+ <li>Coutures extra-plates pour un confort maximal.</li>
+ <li>Couleurs douces et naturelles, sans azoïques.</li>
+ </ul>
+ </div>
+ <div>
+ <img src="télécharger.jpg" alt="Tissus doux et biologiques" style="width:100%;border-radius:12px;box-shadow:0 6px 18px rgba(12,16,30,.04)" loading="lazy">
+ </div>
+ </div>
+ </section>
+
+ <section id="contact" class="container section" style="text-align: center;">
+    <h2 style="font-size:28px;margin-bottom:30px;color:#ff69b4">
+        💌 Nous Contacter
+    </h2>
+
+    <div class="grid-2" style="display: flex; justify-content: center; align-items: center;">
+        <div>
+            <p style="text-align:center;">
+                Email : maboutiqu@gmail.com <br>
+                Téléphone : +229 0198128096
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="container footer" style="border-top:1px solid #e6e7eb;text-align:center">
+ © 2025 La Boutique Bébé. Tous droits réservés. |
+ <a href="#" style="color:var(--muted);text-decoration:none">Mentions Légales</a> |
+ <a href="#" style="color:var(--muted);text-decoration:none">Politique de Confidentialité</a>
+</footer>
+</body>
+</html>
